@@ -1,0 +1,43 @@
+---
+// Kod kısmı: Buradaki değişkenler panelden yönetilebilir olacak
+const baslik = "Benim Özel Tasarımım";
+const altBaslik = "Bu siteyi hem kodla hem şablonla yönetiyorum.";
+---
+
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<title>{baslik}</title>
+		<style>
+			/* Senin Özgürlük Alanın: İstediğin CSS'i buraya yaz */
+			body {
+				font-family: 'Segoe UI', sans-serif;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.kart {
+				background: rgba(255, 255, 255, 0.1);
+				padding: 3rem;
+				border-radius: 20px;
+				backdrop-filter: blur(10px);
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				text-align: center;
+			}
+			h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+		</style>
+	</head>
+	<body>
+		<div class="kart">
+			<h1>{baslik}</h1>
+			<p>{altBaslik}</p>
+			<button style="padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+				Tıkla ve Değiştir
+			</button>
+		</div>
+	</body>
+</html>
